@@ -97,8 +97,8 @@ public class LetterIndex extends View {
                 if (position<0){
                     position=-1;
                 }
-                if (position>letter.length){
-                    position = letter.length;
+                if (position>=letter.length){
+                    position = letter.length-1;
                 }
                 if (currentPostion==position){
                     Log.e("TAG","进入return");
